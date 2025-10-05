@@ -2,7 +2,6 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from vnstock.explorer.vci.quote import Quote
 from datetime import datetime, timedelta
-from vnstock import Listing
 
 app = Flask(__name__)
 CORS(app)  # Cho phép truy cập từ mọi nguồn
@@ -219,5 +218,3 @@ if __name__ == '__main__':
     print("=" * 60)
     print()
     app.run(host='0.0.0.0', port=5000, debug=True)
-    list_10= Listing()
-    print(list_10.all_symbols()[:10])
