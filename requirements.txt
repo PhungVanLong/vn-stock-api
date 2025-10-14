@@ -1,6 +1,6 @@
-flask==3.0.0
-flask-cors==4.0.0
-vnstock==3.2.5
-gunicorn==21.2.0
-pandas>=2.2.0
-requests==2.31.0
+Flask
+Flask-Cors
+vnstock
+gunicorn
+gevent
+redis
